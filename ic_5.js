@@ -35,6 +35,8 @@ function getCategoryDiscount (category)
             discount = 0
             break;}
 }
+
+console.log(getCategoryDiscount("gear"))
    
-console.log(getCategoryDiscount)("apparel")
+
 
