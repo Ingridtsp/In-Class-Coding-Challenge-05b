@@ -44,7 +44,6 @@ function priceAfterCategoryDiscount(product)
     return product.price * (1-rate);
 }
 
-console.log(priceAfterCategoryDiscount(product[0]));
 
 //Task 3
 function findProductbyId(id){
@@ -53,6 +52,15 @@ function findProductbyId(id){
             return p;
     }
     return null;
+}
+
+//Task 4
+function lineItemTotal(cartItem, products){
+    const product = findProductbyId(cartItem.id, products);
+    if (!product || cartItem.qty <= 0){return 0}
+
+const discountUnitPrice = priceAfterCategoryDiscount(product);
+return cartItem.qty * discountUnitPrice;
 }
 
 
