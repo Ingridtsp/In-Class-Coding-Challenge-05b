@@ -4,7 +4,7 @@ const products = [
   { id: 202, name: "Team Jersey",         category: "apparel", price: 49.5  },
   { id: 203, name: "Energy Drink 6-pack", category: "snacks",  price: 12.0  },
   { id: 204, name: "Arena Day Pass",      category: "access",  price: 15.0  },
-  { id: 205, name: "Switchable Keycaps",  category: "gear",    price: 19.0  }
+  { id: 205, name: "Switchable Keycaps",  category: "gear",    price: 19.0  },
 ];
 
 // Example cart (product & quantity)
@@ -36,10 +36,5 @@ function getCategoryDiscount (category)
             break;}
 }
    
+console.log(getCategoryDiscount)("apparel")
 
-    
-    let promoPrice = category.price * (1 - discount);
-    category.promPrice = promoPrice;
-
-
-console.log(category)
