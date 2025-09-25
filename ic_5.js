@@ -17,3 +17,29 @@ const cart = [
 
 // Try: "regular", "student", "member", or "vip"
 const customerType = "member";
+
+// Task 1: Apply Category Discounts 
+function getCategoryDiscount (category)
+{ switch(category){
+        case "gear":
+            discount = .10
+            break;
+        case "apparel":
+            discount =.15; 
+            break;
+        case "snacks":
+            discount = .08;
+        case "access":
+            discount = .05;
+        default: 
+            discount = 0
+            break;}
+}
+   
+
+    
+    let promoPrice = category.price * (1 - discount);
+    category.promPrice = promoPrice;
+
+
+console.log(category)
