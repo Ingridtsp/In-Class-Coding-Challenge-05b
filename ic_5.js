@@ -39,12 +39,22 @@ function getCategoryDiscount (category)
 console.log(getCategoryDiscount("gear"))
 
 //Task 2
-function  priceAfterCategoryDiscount(product)
+function priceAfterCategoryDiscount(product)
 {let rate = getCategoryDiscount(product.category);
     return product.price * (1-rate);
 }
 
 console.log(priceAfterCategoryDiscount(product[0]));
+
+//Task 3
+function findProductbyId(id){
+    for (let p of products){
+        if (p.id === id)
+            return p;
+    }
+    return null;
+}
+
 
 
 
